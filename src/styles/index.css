@@ -1,3 +1,9 @@
 body {
-    font-size: 15rem;
+    font-size: 10rem;
 }
+
+@media (max-width: 700px) {
+    .icon {
+        display:none;
+    }
+  }
