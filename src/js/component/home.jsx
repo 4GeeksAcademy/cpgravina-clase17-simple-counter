@@ -10,8 +10,11 @@ const Home = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  const formattedSeconds = String(seconds).padStart(6, '0');
+
   return (
-    <div className="container">
+    <div className="container-fuid">
       <div className="row justify-content-center">
         <div className="col-lg-6 col-md-8 col-sm-10">
           <div
@@ -19,7 +22,7 @@ const Home = () => {
             style={{ height: "17rem" }}
           >
             <i className="icon fa-solid fa-clock"></i>
-            <p className="p-2">{seconds}</p>
+            <p className="p-2">{formattedSeconds}</p>
           </div>
         </div>
       </div>
